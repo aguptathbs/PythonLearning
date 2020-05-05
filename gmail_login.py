@@ -1,13 +1,13 @@
 import unittest
 from selenium.webdriver import Chrome
-from login_page import LoginPage
+from learning.selenium.POM.gmail.login_page import LoginPage
 #from learning.selenium.POM.gmail import create_driver
 
 class Testlogin512345(unittest.TestCase):
 
     def setUp(self):
         #Browser Initialization
-        self.driver = Chrome('/chromedriver.exe')
+        self.driver = Chrome('C:\AllPythonProjects\PythonLearning\learning\driver\chromedriver.exe')
         #self.driver = create_driver.get_browser_instance()
         self.driver.maximize_window()
         self.driver.implicitly_wait(30)
