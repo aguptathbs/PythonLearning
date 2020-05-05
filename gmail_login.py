@@ -7,7 +7,7 @@ class Testlogin512345(unittest.TestCase):
 
     def setUp(self):
         #Browser Initialization
-        self.driver = Chrome('chromedriver.exe')
+        self.driver = Chrome('/chromedriver.exe')
         #self.driver = create_driver.get_browser_instance()
         self.driver.maximize_window()
         self.driver.implicitly_wait(30)
